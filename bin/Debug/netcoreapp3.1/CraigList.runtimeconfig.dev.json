@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\zipoz\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\zipoz\\.nuget\\packages"
+    ]
+  }
+}

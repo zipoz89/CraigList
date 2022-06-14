@@ -1,0 +1,34 @@
+﻿@model List<AuctionModel>
+@{
+    ViewData["Title"] = "Auctions";
+}
+
+<style>
+</style>
+
+<div class="text-center">
+    <h1 class="display-4">Auctions</h1>
+    <div class="row">
+        @{
+            foreach (var auction in Model)
+            {
+                <a class="fill-div" style="color: #000000; text-decoration: none;" asp-area="" asp-controller="AuctionModels" asp-route-auctionId="@auction.Id" asp-action="DisplayAuction">
+                    <div class="card" style="width: 18rem;">
+                        @if (auction.Picture != null)
+                        {
+                            <img class="card-img-top" src="~/Img/@auction.Picture" asp-append-version="true">
+                        }
+                        else
+                        {
+                            <img src="https://localhost:44305/Images/CraigLogo.png" style="width:100px;height:100px;" />
+                        }
+                        <div class="card-body">
+                            <p class="card-text">@(auction.Title)   </p>
+                            <p>@(auction.Price)zł</p>
+                        </div>
+                    </div>
+                </a>
+            }
+        }
+    </div>
+</div>
