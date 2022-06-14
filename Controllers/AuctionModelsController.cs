@@ -98,7 +98,11 @@ namespace CraigList.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Title,Description,Price,Picture")] CreateAuctionModel createAuctionModel)
         {
-            string fileName = UploadFile(createAuctionModel);
+            string fileName = "nie ma";
+            if (createAuctionModel.Picture != null)
+            {
+                fileName = UploadFile(createAuctionModel);
+            }
 
             var user = await _userManager.GetUserAsync(HttpContext.User);
 
