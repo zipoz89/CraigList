@@ -1,5 +1,7 @@
 # CraigList
 
+this project was made for my university course .NET programming
+
 Auction list, where every user auction is displayed
 ![](Images/auctionList.png)
 
