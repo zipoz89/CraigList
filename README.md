@@ -1,13 +1,13 @@
 # CraigList
 
-![](Images/auctionList.jpg)
+![](Images/auctionList.png)
 
-![](Images/auction.jpg)
+![](Images/auction.png)
 
-![](Images/myAuctions.jpg)
+![](Images/myAuctions.png)
 
-![](Images/newAuction.jpg)
+![](Images/newAuction.png)
 
-![](Images/roleManager.jpg)
+![](Images/roleManager.png)
 
-![](Images/userRoles.jpg)
+![](Images/userRoles.png)
